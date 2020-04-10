@@ -1,4 +1,4 @@
-# GoPhish
+# GoPhish for Production
 
 ## Features
 - Docker
