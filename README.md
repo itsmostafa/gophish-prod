@@ -2,15 +2,17 @@
 
 ## Features
 - Docker
+- Nginx
 - Let's Encrypt
-- Launch on Ubuntu 18.04 LTS Server
+- Launch on an Ubuntu 18.04 LTS Server
 
 ## Setup locally
 - Build containers
     -  `make build`
 - Run GoPhish
     - `make up`
-- GoPhish is running on `localhost` & `localhost:3333`
+- GoPhish admin UI is running on `localhost` & `localhost:3333`
+- Phishing server is running on `localhost:8080`
 
 ## Setup on a Production Server
 
