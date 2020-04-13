@@ -1,23 +1,32 @@
 # GoPhish for Production
 
 ## Features
-- Docker
-- Nginx
-- Let's Encrypt
-- Launch on an Ubuntu 18.04 LTS Server
+- [Docker](https://www.docker.com/)
+- [Nginx](https://www.nginx.com/)
+- [Let's Encrypt](https://letsencrypt.org/)
+- [MySQL Database](https://www.mysql.com/)
+- [Adminer database management UI](https://www.adminer.org/)
+- Tested to launch on an Ubuntu 18.04 LTS Server
 
 ## Setup locally
+- Create your env file
+    - `cp etc/env.dist .env`
 - Build containers
     -  `make build`
 - Run GoPhish
     - `make up`
 - GoPhish admin UI is running on `localhost` & `localhost:3333`
 - Phishing server is running on `localhost:8080`
+- Adminer UI is running on `localhost:9000`
 
 ## Setup on a Production Server
 
 ### Initial Setup
+- Clone this repo
+- Create your env file in to the root directory
+    - `cp etc/env.dist .env`
 - Change the `server_name` in `etc/nginx/config.conf` from `127.0.0.1` to **your domain name**
+- Update your `.env` file to a more secure database password
 - Install **Make**
     - `sudo apt install make`
 
