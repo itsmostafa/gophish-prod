@@ -54,8 +54,10 @@
 ### Run GoPhish on a Production Server
 - Install and update required packages
     - `make init`
+- Follow on-screen prompts
 - Restart Server in order for changes to take effect
 - Build containers
+    - `cd gophish-prod`
     - `make build`
 - Run GoPhish
     - `make up`
