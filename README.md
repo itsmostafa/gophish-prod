@@ -5,6 +5,7 @@
 - [Nginx](https://www.nginx.com/)
 - [Let's Encrypt](https://letsencrypt.org/)
 - [MySQL Database](https://www.mysql.com/)
+- [Postfix](http://www.postfix.org/)
 - [Adminer database management UI](https://www.adminer.org/)
 - Tested to launch on an Ubuntu 18.04 LTS Server
 
